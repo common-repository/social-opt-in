@@ -1,0 +1,255 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-soptin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-09-05 21:44+0100\n"
+"PO-Revision-Date: 2011-09-05 22:20+0100\n"
+"Last-Translator: Fritz Mielert <fritz@fritzmielert.de>\n"
+"Language-Team: Fritz <fritz@fritzmielert.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-SearchPath-0: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in\n"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:32
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:106
+msgid "Share Post"
+msgstr "Artikel weiterverbreiten"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:33
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:118
+msgid "To share ths articel via social networks, you've got to enable them - For your privacy."
+msgstr "Um Artikel über soziale Netzwerke weiterzuverbreiten, müssen Sie diese aktivieren - für mehr Datenschutz."
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:81
+msgid "On this page you can configure, how the plugin looks like and which social networks will be shown by this plugin under each page or post. If you choose to add this plugin via code, you've got to add <?php if(function_exists('social-opt-in')) social-opt-in(); ?> to loop.php."
+msgstr "Hier kannst Du einstellen, wie Social Opt In unter Deinen Seiten und Artikeln aussieht und welche Sozialen Netzwerke verfügbar sind. Wenn Du das Plugin per PHP einbinden willst, musst Du <?php if(function_exists('social-opt-in')) social-opt-in(); ?> in der Theme-Datei loop.php ergänzen."
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:84
+msgid "Mode"
+msgstr "Betriebsmodus"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:88
+msgid "<strong>Filtering of posts.</strong> Automatically adds the bar to each post on every page.<br/>"
+msgstr "<strong>Filtern von Beiträgen.</strong> Allen Beträgen auf allen Seiten wird automatisch die Leiste angehängt.<br/>"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:89
+msgid "<strong>Call via PHP.</strong> You've got to add &lt;?php if(function_exists('social_opt_in')) social_opt_in(); ?&gt; to your theme file."
+msgstr "<strong>Aufruf über PHP.</strong> Du musst diese Zeile in Deinem Theme ergänzen: &lt;?php if(function_exists('social_opt_in')) social_opt_in(); ?&gt; "
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:91
+msgid "You have more control over the layout if you choose the PHP code option.<br/>You've got to add <?php if(function_exists('social_opt_in')) social_opt_in(); ?> to loop.php."
+msgstr "Du hast eine größere Kontrolle über das Layout, wenn Du Die Option PHP Code wählst. Dann musst Du diese Zeile in loop.php ergänzen: <?php if(function_exists('social-opt-in')) social-opt-in(); ?> "
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:97
+msgid "Show headline"
+msgstr "Überschrift anzeigen"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:100
+msgid "Show headline over the bar"
+msgstr "Überschrift über der Toolbar anzeigen"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:103
+msgid "Headline"
+msgstr "Überschrift"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:106
+msgid "Headline over <i>Social Opt In</i>."
+msgstr "Überschrift über Social Opt In"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:109
+msgid "Show description"
+msgstr "Beschreibung anzeigen"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:112
+msgid "Show description under the bar"
+msgstr "Beschreibung unter der Toolbar anzeigen"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:115
+msgid "Description"
+msgstr "Beschreibung"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:118
+msgid "Why you've installed <i>Social Opt In</i>."
+msgstr "Warum Du <i>Social Opt In</i> einsetzt."
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:121
+msgid "Twitter pre"
+msgstr "Vor dem Tweet"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:124
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:130
+msgid "Your Twitter account or some hashtags"
+msgstr "Dein Twitter-Account oder Hashtags"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:127
+msgid "Twitter post"
+msgstr "Nach dem Tweet"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:148
+msgid "Mail"
+msgstr "E-Mail"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:153
+msgid "Styles"
+msgstr "Styles"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:157
+msgid "Default CSS-Styles"
+msgstr "Standard CSS-Styles"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:186
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/scb-framework/scb/AdminPage.php:161
+msgid "Settings <strong>saved</strong>."
+msgstr "Einstellungen <strong>gespeichert</strong>."
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/admin.php:191
+msgid "Settings <strong>reset</strong>."
+msgstr "Einstellungen <strong>zurückgesetzt</strong>."
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:116
+#, php-format
+msgid "%s Post: %s"
+msgstr "%s Artikel: %s"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:118
+#, php-format
+msgid ""
+"Personal message from sender:\n"
+"%s\n"
+"\n"
+"The following post was recommended to you by %s:\n"
+"_______________________________________________________________________________\n"
+"\n"
+"%s\n"
+"\n"
+"You can find the complete article at:\n"
+"%s\n"
+"\n"
+"_______________________________________________________________________________\n"
+"\n"
+"%s"
+msgstr ""
+"Die persönliche Mitteilung des Absenders lautet:\n"
+"%s\n"
+"\n"
+"Dieser Artikel wurde Ihnen von %s empfohlen\n"
+"_______________________________________________________________________________\n"
+"\n"
+"%s\n"
+"\n"
+"Den vollständigen Artikel können Sie sich unter dieser Adresse anschauen:\n"
+"%s\n"
+"\n"
+"_______________________________________________________________________________\n"
+"\n"
+"%s"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:135
+#, php-format
+msgid "We've sent \"%s\" to %s."
+msgstr "Wir haben \"%s\" an %s geschickt."
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:242
+msgid "Activate Twitter"
+msgstr "Twitter aktivieren"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:250
+msgid "Activate Facebook"
+msgstr "Facebook aktivieren"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:258
+msgid "Activate Google"
+msgstr "aktivieren"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:265
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:471
+msgid "Send post via email"
+msgstr "Per E-Mail verschicken"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:265
+msgid "Email this"
+msgstr "Mailen"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:418
+msgid "\"Length of \" + n + \" must be between \" + min + \" and \" + max + \".\""
+msgstr "\"Die Länge von \" + n + \" muss zwischen \" + min + \" und \" + max + \" liegen.\""
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:482
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:483
+msgid "joe@gmail.com"
+msgstr "michel@gmx.de"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:496
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:508
+msgid "Share this post via email"
+msgstr "Verbreiten Sie den Artikel via E-Mail"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:509
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:524
+msgid "All form fields are required."
+msgstr "Alle Formularfelder sind erforderlich."
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:514
+msgid "Recipients email address"
+msgstr "E-Mail-Adresse des Empfängers"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:516
+msgid "Your message"
+msgstr "Ihre Nachricht"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:518
+msgid "Your email address"
+msgstr "Ihre E-Mail-Adresse"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/social-opt-in.php:523
+msgid "Thanks for sharing"
+msgstr "Danke fürs Weiterverbreiten."
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/scb-framework/scb/AdminPage.php:174
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/scb-framework/scb/AdminPage.php:185
+msgid "Save Changes"
+msgstr "Eistellungen speichern"
+
+#: /Applications/MAMP/localhost/wp-content/plugins/social-opt-in/scb-framework/scb/AdminPage.php:367
+msgid "Settings"
+msgstr "Einstellungen"
+
+#~ msgid "Call via PHP code in theme file (loop.php)"
+#~ msgstr "Aufruf via PHP Code in der Theme-Datei (loop.php)"
+
+#~ msgid "Filtering of posts"
+#~ msgstr "Anwendung eines Filters auf alle Posts"
+
+#~ msgid "Print post"
+#~ msgstr "Artikel drucken"
+
+#~ msgid "Print"
+#~ msgstr "Drucken"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Description Link"
+#~ msgstr "Link innerhalb der Beschreibung"
+
+#~ msgid "Url to your privacy policy."
+#~ msgstr "Link zu Deiner Erklärung zum Datenschutz."
+
+#~ msgid "Social Media"
+#~ msgstr "Verbreitungsmöglichkeiten"
+
+#~ msgid "Social Privacy"
+#~ msgstr "Social Privacy"
+
+#~ msgid "Artikel verbreiten"
+#~ msgstr "Artikel verbreiten"
+
+#~ msgid "Artikel als E-Mail Versenden"
+#~ msgstr "Artikel als E-Mail Versenden"

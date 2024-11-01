@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta charset="utf-8"/>
+		<title>SocialPrivacySharer</title>
+		<style type="text/css">
+			body{padding:0;margin:0;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;}
+			#medium{
+				height:21px;
+				overflow:hidden;
+				cursor:pointer;
+				float:left;
+			}
+			#sharerlink, #sharerend{
+				background-repeat:no-repeat;
+				padding:0;margin:0;
+				float:left;
+				background-image:url(bg.png);
+				text-decoration: none;
+			}
+			#sharerend{
+				width:5px;
+				height:21px;
+			}
+			.twitter #sharerlink{
+				background-position:0 0;
+				padding-left:20px;
+				padding-top:3px;
+				height:18px;
+				color:#0b3752;
+				font-weight:bold;
+				font-size:11px;
+			}
+			.twitter #sharerend{
+				background-position:-162px 0;
+			}
+			.facebook #sharerlink{
+				background-position:0 -42px;
+				padding-left:22px;
+				padding-top:3px;
+				height:18px;
+				color:#3B5998;
+				font-weight:normal;
+				font-size:11px;
+			}
+			.facebook #sharerend{
+				background-position:-162px -42px;
+			}
+			.google #sharerlink{
+				background-position:0 -84px;
+				padding-left:26px;
+				padding-top:5px;
+				height:18px;
+				color:#0063ff;
+				font-weight:bold;
+				font-style:italic;
+				font-size:10px;
+			}
+			.google #sharerend{
+				background-position:-162px -84px;
+			}
+		</style>
+		<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.4.4'></script>
+	</head>
+	<body>
+		<div id="medium">
+			<a id="sharerlink"></a>
+			<div id="sharerend"></div>
+		</div>
+		<script>
+		/* Copyright (c) 2006 Mathias Bank (http://www.mathias-bank.de)
+		 * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) 
+		 * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+		 * 
+		 * Thanks to Hinnerk Ruemenapf - http://hinnerk.ruemenapf.de/ for bug reporting and fixing.
+		 */
+		jQuery.extend({
+		/**
+		* Returns get parameters.
+		*
+		* If the desired param does not exist, null will be returned
+		*
+		* @example value = $.getURLParam("paramName");
+		*/ 
+		getURLParam: function(strParamName){
+			  var strReturn = "";
+			  var strHref = window.location.href;
+			  var bFound=false;
+			  
+			  var cmpstring = strParamName + "=";
+			  var cmplen = cmpstring.length;
+		
+			  if ( strHref.indexOf("?") > -1 ){
+				var strQueryString = strHref.substr(strHref.indexOf("?")+1);
+				var aQueryString = strQueryString.split("&");
+				for ( var iParam = 0; iParam < aQueryString.length; iParam++ ){
+				  if (aQueryString[iParam].substr(0,cmplen)==cmpstring){
+					var aParam = aQueryString[iParam].split("=");
+					strReturn = aParam[1];
+					bFound=true;
+					break;
+				  }
+				  
+				}
+			  }
+			  if (bFound==false) return null;
+			  return strReturn;
+			}
+		});
+		//xxx();
+		//function xxx(){
+		jQuery(function ($) {
+			var medium = $.getURLParam("medium");
+			var buttontext = $.getURLParam("buttontext");
+			var link = $.getURLParam("url");
+			var tweettext = $.getURLParam("text");
+			if(medium == "twitter")
+				$("#medium").addClass("twitter");
+			else if(medium == "facebook")
+				$("#medium").addClass("facebook");
+			else if(medium == "google")
+				$("#medium").addClass("google");
+			if(buttontext)
+				$("#sharerlink").html(decodeURIComponent(buttontext));
+			if(link){
+				//$("#sharerlink").href.value=decodeURIComponent(link);
+				//$("#sharerlink").setAttribute("href",decodeURIComponent(link));
+				if(medium == "twitter")
+					//link = "http://platform0.twitter.com/widgets/tweet_button.html?_=1308433672399&count=horizontal&id=twitter_tweet_button_0&lang=de&original_referer="+link+"&text="+tweettext+"&url="+link;
+					link = "http://platform0.twitter.com/widgets/tweet_button.html?_=1308433672399&count=horizontal&id=twitter_tweet_button_0&lang=de&text="+tweettext+"&url="+link;
+				if(medium == "facebook")
+					link = "http://www.facebook.com/plugins/like.php?action=recommend&channel_url=http%3A%2F%2Fstatic.ak.fbcdn.net%2Fconnect%2Fxd_proxy.php%3Fversion%3D3%23cb%3Df29ab70a83da7b8%26origin%3D"+link+"%26relation%3Dparent.parent%26transport%3Dpostmessage&font=arial&href="+link+"&layout=button_count&locale=de_DE&node_type=link&sdk=joey&send=false&show_faces=false&width=139";
+				if(medium == "google")
+					link = "https://plusone.google.com/u/0/_/+1/button?hl=en-US&jsh=r%3Bgc%2F21773286-02b1a9f6#url="+link+"&size=medium&count=true&_methods=_ready%2C_close%2C_open%2C_resizeMe";
+				$("#sharerlink").attr("href",link);
+				$("#sharerlink").attr("href",link);
+			}
+			$(".twitter").hover(
+			  function () {
+				$('#sharerlink').css({backgroundPosition: '0px -21px'});
+				$('#sharerend').css({backgroundPosition: '-162px -21px'});
+			  }, 
+			  function () {
+				$('#sharerlink').css({backgroundPosition: '0px 0px'});
+				$('#sharerend').css({backgroundPosition: '-162px 0px'});
+			  }
+			);
+			
+			$(".facebook").hover(
+			  function () {
+				$('#sharerlink').css({backgroundPosition: '0px -63px'});
+				$('#sharerend').css({backgroundPosition: '-162px -63px'});
+			  }, 
+			  function () {
+				$('#sharerlink').css({backgroundPosition: '0px -42px'});
+				$('#sharerend').css({backgroundPosition: '-162px -42px'});
+			  }
+			);
+	
+			$(".google").hover(
+			  function () {
+				$('#sharerlink').css({backgroundPosition: '0px -105px'});
+				$('#sharerend').css({backgroundPosition: '-162px -105px'});
+			  }, 
+			  function () {
+				$('#sharerlink').css({backgroundPosition: '0px -84px'});
+				$('#sharerend').css({backgroundPosition: '-162px -84px'});
+			  }
+			);
+			//$(document).ready(function() {
+			// Handler for .ready() called.
+			//});
+		});
+		//}
+		//if(link)
+		//	$("#sharerlink").attr.;
+		//	$.("#medium").addClass($.getURLParam("medium"));
+		</script>
+	</body>
+</html>
